@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center px-4">
+
+  <div class="bg-gray-800 p-8 rounded-2xl shadow-2xl w-full max-w-md text-white">
+    <h2 class="text-4xl font-extrabold mb-6 text-center text-green-400">Create an Account</h2>
+
+    <form action="/register" method="POST" class="flex flex-col space-y-5">
+      Full Name
+      <label class="text-sm font-medium text-gray-300">
+      <input
+          class="mt-1 w-full px-4 py-2 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 transition duration-200"
+          type="text" name="name" placeholder="Enter your full name" required />
+      </label>
+    
+      <label class="text-sm font-medium text-gray-300">
+        Username
+        <input
+          class="mt-1 w-full px-4 py-2 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 transition duration-200"
+          type="text" name="username" placeholder="Enter your username" required />
+      </label>
+
+      <label class="text-sm font-medium text-gray-300">
+        Email
+        <input
+          class="mt-1 w-full px-4 py-2 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 transition duration-200"
+          type="email" name="email" placeholder="Enter your email" required />
+      </label>
+
+      <label class="text-sm font-medium text-gray-300">
+        Password
+        <input
+          class="mt-1 w-full px-4 py-2 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 transition duration-200"
+          type="password" name="password" placeholder="Enter your password" required />
+      </label>
+
+      <label class="text-sm font-medium text-gray-300">
+        Confirm Password
+        <input
+          class="mt-1 w-full px-4 py-2 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 transition duration-200"
+          type="password" name="confirm_password" placeholder="Confirm password" required />
+      </label>
+
+      <button
+        type="submit"
+        class="w-full py-2 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg transition duration-200">
+        Register
+      </button>
+    </form>
+
+    <p class="text-center text-sm text-gray-400 mt-6">
+      Already have an account?
+      <a href="/login" class="text-green-400 hover:text-green-300 hover:underline transition duration-150">Log in</a>
+    </p>
+  </div>
+
+</body>
+</html>

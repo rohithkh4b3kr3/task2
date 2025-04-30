@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Admin Panel</title></head>
+<body>
+    <h1>Admin Panel</h1>
+    <h2>All Registered Users</h2>
+    <ul>
+        <% users.forEach(function(user) { %>
+            <li> <%= user.username %> - <%= user.email %></li>
+        <% }); %>
+    </ul>
+</body>
+</html>
