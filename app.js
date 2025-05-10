@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 // Secret key for JWT
-const JWT_SECRET = "your_secret_key_here";
+const JWT_SECRET = "Scode";
 
 // Middleware to check authentication
 const authMiddleware = (req, res, next) => {
